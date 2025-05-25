@@ -14,7 +14,7 @@ const ShoppingAssistance = () => {
       icon: <FiTruck className="w-8 h-8 text-[#ffd200] dark:text-[#ffd200]" />,
       title: "Track Orders",
       description: "Real-time tracking updates",
-      link: "/orders/track"
+      link: "/track-order"
     },
     {
       icon: <FiCreditCard className="w-8 h-8 text-[#ffd200] dark:text-[#ffd200]" />,

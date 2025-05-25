@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center space-x-3">
             <Link href="/contact" className="text-gray-700 dark:text-gray-300 hover:text-[#ffd200]">Contact</Link>
-            <Link href="/orders/track" className="text-gray-700 dark:text-gray-300 hover:text-[#ffd200]">Track Order</Link>
+            <Link href="/track-order" className="text-gray-700 dark:text-gray-300 hover:text-[#ffd200]">Track Order</Link>
           </div>
         </div>
       </div>
@@ -194,7 +194,7 @@ const Navbar = () => {
             <Link href="/contact" className="block px-3 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
               CONTACT US
             </Link>
-            <Link href="/orders/track" className="block px-3 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
+            <Link href="/track-order" className="block px-3 py-2 text-sm font-medium text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
               TRACK ORDER
             </Link>
           </div>
