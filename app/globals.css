@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 248, 248, 250;
+  --primary: 236, 72, 153;
+  --primary-light: 249, 168, 212;
+}
+
+/* Dark mode variables */
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 17, 24, 39;
+  --primary: 244, 114, 182;
+  --primary-light: 251, 207, 232;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+/* Consistent container padding */
+.container, 
+.max-w-7xl {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Improved spacing */
+section {
+  margin-bottom: 3rem;
+}
+
+/* Add more spacing to elements */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  line-height: 1.4;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+
+/* Better button spacing */
+button, 
+.button,
+[type='button'],
+[type='submit'] {
+  padding: 0.5rem 1rem;
+}
+
+/* Better form controls */
+input, select, textarea {
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Card spacing */
+.card {
+  padding: 1.5rem;
+}
+
+/* Links */
+a:hover {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Product grid consistent spacing */
+.grid {
+  gap: 1.5rem;
+}
+
+/* ProductCard consistent height */
+.product-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Fix image aspect ratios */
+.aspect-square {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.aspect-square img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Fix navbar alignment */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+/* Footer consistent spacing */
+footer {
+  margin-top: auto;
+}
+
+/* Dark mode transition helpers */
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+} 
