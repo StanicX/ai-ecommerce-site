@@ -105,7 +105,7 @@ const OtpInput: React.FC<OtpInputProps> = ({ length = 4, onOtpComplete }) => {
           inputMode="numeric"
           maxLength={1}
           value={digit}
-          ref={(el) => (inputRefs.current[index] = el)}
+          ref={(el) => { inputRefs.current[index] = el }}
           onChange={(e) => handleChange(e, index)}
           onKeyDown={(e) => handleKeyDown(e, index)}
           onPaste={handlePaste}

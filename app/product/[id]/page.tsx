@@ -29,8 +29,8 @@ export default function ProductPage() {
     );
   }
 
-  const [selectedColor, setSelectedColor] = useState(product.colors[0]);
-  const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
+  const [selectedColor, setSelectedColor] = useState(product.colors?.[0] ?? '');
+  const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] ?? '');
   const [quantity, setQuantity] = useState(1);
 
   // Generate random review count between 1 and 21,000
@@ -89,7 +89,7 @@ export default function ProductPage() {
               <div className="mb-6">
                 <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-2">Color</h3>
                 <div className="flex space-x-2">
-                  {product.colors.map(color => (
+                  {product?.colors?.map(color => (
                     <button
                       key={color}
                       onClick={() => setSelectedColor(color)}
@@ -121,7 +121,7 @@ export default function ProductPage() {
               <div className="mb-6">
                 <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-2">Size</h3>
                 <div className="grid grid-cols-5 gap-2">
-                  {product.sizes.map(size => (
+                  {product?.sizes?.map(size => (
                     <button
                       key={size}
                       onClick={() => setSelectedSize(size)}
